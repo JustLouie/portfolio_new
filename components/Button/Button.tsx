@@ -1,9 +1,11 @@
+import React from 'react'
 
-
-const Button = () => {
+const Button = ({ children, className }: { children: React.ReactNode; className?: string}) => {
     return (
-        <button>
-            
+        <button
+            className={`flex item-center gap-2 py-2 px-4 border border-purple-100 text-white ${className}`}
+        >
+            { children }
         </button>
     )
 }

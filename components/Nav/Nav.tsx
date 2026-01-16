@@ -16,7 +16,7 @@ const Nav = () => {
                         <li key={item.href}>
                             <Link 
                                 href={item.href} 
-                                className={`flex items-center text-sm transition-colors ${
+                                className={`flex items-center text-sm transition-colors text-2xl ${
                                     isActive 
                                         ? "text-white font-medium" 
                                         : "text-gray-100 hover:text-white"
